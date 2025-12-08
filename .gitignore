@@ -1,16 +1,108 @@
-.venv
-logs
-*.log
+# ========================
+# Python 虚拟环境文件夹
+# ========================
+.venv/
+env/
+env.bak/
+venv/
+venv.bak/
+# 如果使用 pipenv
+Pipfile.lock
+
+# ========================
+# Python 编译文件
+# ========================
 *.pyc
 *.pyo
 *.pyd
-*.pyw
-*.pyz
-*.pywz
-*.pyzw
-*.pyzwz
-*.pyzwzw
-*.pyzwzwz
-*.pyzwzwzw
-*.pyzwzwzwz
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.bak
+
+# ========================
+# Python 项目文件
+# ========================
+*.egg
+*.egg-info
+dist/
+build/
+*.manifest
+*.spec
+
+# ========================
+# IDE 文件
+# ========================
+# PyCharm
+.idea/
+# VS Code
+.vscode/
+# Eclipse
+.project
+.pydevproject
+# IntelliJ IDEA
+*.iml
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# 日志文件
+# ========================
+logs/
+*.log
+
+# ========================
+# 系统文件
+# ========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# ========================
+# 临时文件
+# ========================
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# ========================
+# Jupyter Notebook 文件
+# ========================
+.ipynb_checkpoints
+
+# ========================
+# 配置文件
+# ========================
+*.json
+*.yml
+*.yaml
+*.ini
+*.toml
+
+# ========================
+# 服务和数据库文件
+# ========================
 services/__pycache__/
+*.sqlite3
+*.db
+*.sql
+
+# ========================
+# 特定平台配置文件
+# ========================
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
