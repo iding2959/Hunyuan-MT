@@ -1,30 +1,91 @@
 /mnt/sdb/workspaces/project/Hunyuan-MT/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
   warnings.warn(
-INFO 12-08 11:16:56 [__init__.py:235] Automatically detected platform cuda.
-INFO 12-08 11:16:58 [api_server.py:1755] vLLM API server version 0.10.0
-INFO 12-08 11:16:58 [cli_args.py:261] non-default args: {'host': '0.0.0.0', 'port': 8021, 'model': '/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', 'trust_remote_code': True, 'dtype': 'bfloat16', 'max_seq_len_to_capture': 1550, 'served_model_name': ['Hunyuan-MT-Chimera-7B'], 'gpu_memory_utilization': 0.92, 'show_hidden_metrics_for_version': 'latest', 'max_num_batched_tokens': 32768, 'max_num_seqs': 512}
-INFO 12-08 11:16:58 [config.py:243] Replacing legacy 'type' key with 'rope_type'
+INFO 12-08 13:24:52 [__init__.py:235] Automatically detected platform cuda.
+INFO 12-08 13:24:54 [api_server.py:1755] vLLM API server version 0.10.0
+INFO 12-08 13:24:54 [cli_args.py:261] non-default args: {'host': '0.0.0.0', 'port': 8021, 'model': '/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', 'trust_remote_code': True, 'dtype': 'bfloat16', 'max_seq_len_to_capture': 1550, 'served_model_name': ['Hunyuan-MT-Chimera-7B'], 'gpu_memory_utilization': 0.92, 'show_hidden_metrics_for_version': 'latest', 'max_num_batched_tokens': 32768, 'max_num_seqs': 512}
+INFO 12-08 13:24:54 [config.py:243] Replacing legacy 'type' key with 'rope_type'
 `torch_dtype` is deprecated! Use `dtype` instead!
-INFO 12-08 11:17:04 [config.py:1604] Using max model len 32768
-INFO 12-08 11:17:04 [config.py:2434] Chunked prefill is enabled with max_num_batched_tokens=32768.
+INFO 12-08 13:25:00 [config.py:1604] Using max model len 32768
+INFO 12-08 13:25:00 [config.py:2434] Chunked prefill is enabled with max_num_batched_tokens=32768.
 /mnt/sdb/workspaces/project/Hunyuan-MT/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
   warnings.warn(
-INFO 12-08 11:17:09 [__init__.py:235] Automatically detected platform cuda.
-INFO 12-08 11:17:10 [core.py:572] Waiting for init message from front-end.
-INFO 12-08 11:17:10 [core.py:71] Initializing a V1 LLM engine (v0.10.0) with config: model='/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', speculative_config=None, tokenizer='/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version='latest', otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=Hunyuan-MT-Chimera-7B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"max_capture_size":512,"local_cache_dir":null}
-INFO 12-08 11:17:12 [parallel_state.py:1102] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
-INFO 12-08 11:17:12 [topk_topp_sampler.py:49] Using FlashInfer for top-p & top-k sampling.
-INFO 12-08 11:17:12 [gpu_model_runner.py:1843] Starting to load model /mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B...
-INFO 12-08 11:17:13 [gpu_model_runner.py:1875] Loading model from scratch...
-INFO 12-08 11:17:13 [cuda.py:290] Using Flash Attention backend on V1 engine.
+INFO 12-08 13:25:05 [__init__.py:235] Automatically detected platform cuda.
+INFO 12-08 13:25:06 [core.py:572] Waiting for init message from front-end.
+INFO 12-08 13:25:06 [core.py:71] Initializing a V1 LLM engine (v0.10.0) with config: model='/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', speculative_config=None, tokenizer='/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version='latest', otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=Hunyuan-MT-Chimera-7B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"max_capture_size":512,"local_cache_dir":null}
+INFO 12-08 13:25:08 [parallel_state.py:1102] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+INFO 12-08 13:25:08 [topk_topp_sampler.py:49] Using FlashInfer for top-p & top-k sampling.
+INFO 12-08 13:25:08 [gpu_model_runner.py:1843] Starting to load model /mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B...
+INFO 12-08 13:25:09 [gpu_model_runner.py:1875] Loading model from scratch...
+INFO 12-08 13:25:09 [cuda.py:290] Using Flash Attention backend on V1 engine.
 Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
-Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.15it/s]
-Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:00,  2.28it/s]
-Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.83it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.08it/s]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:00,  2.06it/s]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.68it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.29it/s]
 Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.39it/s]
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.50it/s]
 
-INFO 12-08 11:17:16 [default_loader.py:262] Loading weights took 2.79 seconds
-INFO 12-08 11:17:16 [gpu_model_runner.py:1892] Model loading took 13.9870 GiB and 3.104666 seconds
-INFO 12-08 11:17:25 [backends.py:530] Using cache directory: /home/sfkj/.cache/vllm/torch_compile_cache/f1022ba8f8/rank_0_0/backbone for vLLM's torch.compile
-INFO 12-08 11:17:25 [backends.py:541] Dynamo bytecode transform time: 8.82 s
+INFO 12-08 13:25:12 [default_loader.py:262] Loading weights took 3.04 seconds
+INFO 12-08 13:25:12 [gpu_model_runner.py:1892] Model loading took 13.9870 GiB and 3.218168 seconds
+INFO 12-08 13:25:21 [backends.py:530] Using cache directory: /home/sfkj/.cache/vllm/torch_compile_cache/f1022ba8f8/rank_0_0/backbone for vLLM's torch.compile
+INFO 12-08 13:25:21 [backends.py:541] Dynamo bytecode transform time: 8.67 s
+INFO 12-08 13:25:29 [backends.py:161] Directly load the compiled graph(s) for dynamic shape from the cache, took 7.096 s
+INFO 12-08 13:25:30 [monitor.py:34] torch.compile takes 8.67 s in total
+INFO 12-08 13:25:34 [gpu_worker.py:255] Available KV cache memory: 23.21 GiB
+INFO 12-08 13:25:35 [kv_cache_utils.py:833] GPU KV cache size: 190,160 tokens
+INFO 12-08 13:25:35 [kv_cache_utils.py:837] Maximum concurrency for 32,768 tokens per request: 5.80x
+Capturing CUDA graph shapes:   0%|          | 0/67 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|▎         | 2/67 [00:00<00:04, 14.24it/s]Capturing CUDA graph shapes:   6%|▌         | 4/67 [00:00<00:04, 14.06it/s]Capturing CUDA graph shapes:   9%|▉         | 6/67 [00:00<00:04, 14.15it/s]Capturing CUDA graph shapes:  12%|█▏        | 8/67 [00:00<00:05,  9.96it/s]Capturing CUDA graph shapes:  15%|█▍        | 10/67 [00:00<00:05, 11.17it/s]Capturing CUDA graph shapes:  18%|█▊        | 12/67 [00:00<00:04, 12.01it/s]Capturing CUDA graph shapes:  21%|██        | 14/67 [00:01<00:04, 12.61it/s]Capturing CUDA graph shapes:  24%|██▍       | 16/67 [00:01<00:05,  9.94it/s]Capturing CUDA graph shapes:  27%|██▋       | 18/67 [00:01<00:04, 11.30it/s]Capturing CUDA graph shapes:  30%|██▉       | 20/67 [00:01<00:03, 12.44it/s]Capturing CUDA graph shapes:  33%|███▎      | 22/67 [00:01<00:03, 13.55it/s]Capturing CUDA graph shapes:  36%|███▌      | 24/67 [00:01<00:02, 14.49it/s]Capturing CUDA graph shapes:  39%|███▉      | 26/67 [00:02<00:03, 10.84it/s]Capturing CUDA graph shapes:  42%|████▏     | 28/67 [00:02<00:03, 12.11it/s]Capturing CUDA graph shapes:  45%|████▍     | 30/67 [00:02<00:02, 13.18it/s]Capturing CUDA graph shapes:  48%|████▊     | 32/67 [00:02<00:02, 14.04it/s]Capturing CUDA graph shapes:  51%|█████     | 34/67 [00:02<00:02, 11.03it/s]Capturing CUDA graph shapes:  54%|█████▎    | 36/67 [00:02<00:02, 12.73it/s]Capturing CUDA graph shapes:  57%|█████▋    | 38/67 [00:03<00:02, 14.24it/s]Capturing CUDA graph shapes:  60%|█████▉    | 40/67 [00:03<00:01, 15.54it/s]Capturing CUDA graph shapes:  64%|██████▍   | 43/67 [00:03<00:01, 17.09it/s]Capturing CUDA graph shapes:  67%|██████▋   | 45/67 [00:03<00:01, 13.05it/s]Capturing CUDA graph shapes:  72%|███████▏  | 48/67 [00:03<00:01, 15.06it/s]Capturing CUDA graph shapes:  76%|███████▌  | 51/67 [00:03<00:00, 16.79it/s]Capturing CUDA graph shapes:  81%|████████  | 54/67 [00:03<00:00, 18.15it/s]Capturing CUDA graph shapes:  84%|████████▎ | 56/67 [00:04<00:00, 13.92it/s]Capturing CUDA graph shapes:  88%|████████▊ | 59/67 [00:04<00:00, 15.86it/s]Capturing CUDA graph shapes:  93%|█████████▎| 62/67 [00:04<00:00, 17.47it/s]Capturing CUDA graph shapes:  97%|█████████▋| 65/67 [00:04<00:00, 19.03it/s]Capturing CUDA graph shapes: 100%|██████████| 67/67 [00:04<00:00, 14.21it/s]
+INFO 12-08 13:25:40 [gpu_model_runner.py:2485] Graph capturing finished in 5 secs, took 0.53 GiB
+INFO 12-08 13:25:40 [core.py:193] init engine (profile, create kv cache, warmup model) took 27.38 seconds
+INFO 12-08 13:25:41 [loggers.py:141] Engine 000: vllm cache_config_info with initialization after num_gpu_blocks is: 11885
+WARNING 12-08 13:25:41 [config.py:1528] Default sampling parameters have been overridden by the model's Hugging Face generation config recommended from the model creator. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+INFO 12-08 13:25:41 [serving_responses.py:89] Using default chat sampling params from model: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.6}
+INFO 12-08 13:25:41 [serving_chat.py:122] Using default chat sampling params from model: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.6}
+INFO 12-08 13:25:41 [serving_completion.py:77] Using default completion sampling params from model: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.6}
+INFO 12-08 13:25:41 [api_server.py:1818] Starting vLLM API server 0 on http://0.0.0.0:8021
+INFO 12-08 13:25:41 [launcher.py:29] Available routes are:
+INFO 12-08 13:25:41 [launcher.py:37] Route: /openapi.json, Methods: GET, HEAD
+INFO 12-08 13:25:41 [launcher.py:37] Route: /docs, Methods: GET, HEAD
+INFO 12-08 13:25:41 [launcher.py:37] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+INFO 12-08 13:25:41 [launcher.py:37] Route: /redoc, Methods: GET, HEAD
+INFO 12-08 13:25:41 [launcher.py:37] Route: /health, Methods: GET
+INFO 12-08 13:25:41 [launcher.py:37] Route: /load, Methods: GET
+INFO 12-08 13:25:41 [launcher.py:37] Route: /ping, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /ping, Methods: GET
+INFO 12-08 13:25:41 [launcher.py:37] Route: /tokenize, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /detokenize, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/models, Methods: GET
+INFO 12-08 13:25:41 [launcher.py:37] Route: /version, Methods: GET
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/responses, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/responses/{response_id}, Methods: GET
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/responses/{response_id}/cancel, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/chat/completions, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/completions, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/embeddings, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /pooling, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /classify, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /score, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/score, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/audio/transcriptions, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/audio/translations, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /rerank, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v1/rerank, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /v2/rerank, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /scale_elastic_ep, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /is_scaling_elastic_ep, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /invocations, Methods: POST
+INFO 12-08 13:25:41 [launcher.py:37] Route: /metrics, Methods: GET
+INFO:     Started server process [3712954]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:47638 - "GET /v1/models HTTP/1.1" 200 OK
+INFO 12-08 13:26:20 [chat_utils.py:473] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+INFO 12-08 13:26:20 [logger.py:41] Received request chatcmpl-ffc9936f2f0543f0bffd7d89208a672d: prompt: '<|startoftext|>你是一名专业的翻译人员，请将给定的文本准确且自然地翻译成中文。<|extra_4|>hello<|extra_0|>', params: SamplingParams(n=1, presence_penalty=0.0, frequency_penalty=0.0, repetition_penalty=1.05, temperature=0.7, top_p=0.6, top_k=20, min_p=0.0, seed=None, stop=[], stop_token_ids=[], bad_words=[], include_stop_str_in_output=False, ignore_eos=False, max_tokens=32746, min_tokens=0, logprobs=None, prompt_logprobs=None, skip_special_tokens=True, spaces_between_special_tokens=True, truncate_prompt_tokens=None, guided_decoding=None, extra_args=None), prompt_token_ids: None, prompt_embeds shape: None, lora_request: None.
+INFO 12-08 13:26:20 [async_llm.py:269] Added request chatcmpl-ffc9936f2f0543f0bffd7d89208a672d.
+INFO:     127.0.0.1:44242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 12-08 13:26:21 [loggers.py:122] Engine 000: Avg prompt throughput: 2.2 tokens/s, Avg generation throughput: 0.2 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+INFO 12-08 13:26:31 [loggers.py:122] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+INFO 12-08 13:26:36 [logger.py:41] Received request chatcmpl-4732106b9bfb40bc9b281ab611a84a08: prompt: "<|startoftext|>你是一名专业的翻译人员，请将给定的文本准确且自然地翻译成中文。<|extra_4|>hello,what's your name<|extra_0|>", params: SamplingParams(n=1, presence_penalty=0.0, frequency_penalty=0.0, repetition_penalty=1.05, temperature=0.7, top_p=0.6, top_k=20, min_p=0.0, seed=None, stop=[], stop_token_ids=[], bad_words=[], include_stop_str_in_output=False, ignore_eos=False, max_tokens=32741, min_tokens=0, logprobs=None, prompt_logprobs=None, skip_special_tokens=True, spaces_between_special_tokens=True, truncate_prompt_tokens=None, guided_decoding=None, extra_args=None), prompt_token_ids: None, prompt_embeds shape: None, lora_request: None.
+INFO 12-08 13:26:36 [async_llm.py:269] Added request chatcmpl-4732106b9bfb40bc9b281ab611a84a08.
+INFO:     127.0.0.1:50902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 12-08 13:26:41 [loggers.py:122] Engine 000: Avg prompt throughput: 2.7 tokens/s, Avg generation throughput: 0.8 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 32.7%
+INFO 12-08 13:26:51 [loggers.py:122] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 32.7%
