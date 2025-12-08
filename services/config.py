@@ -39,8 +39,11 @@ class Settings(BaseModel):
     api_reload: bool = _str_to_bool(os.getenv("API_RELOAD"), True)
 
     vllm_start_script: str = os.getenv("VLLM_START_SCRIPT", "start_server.sh")
-    vllm_ready_timeout: int = int(os.getenv("VLLM_READY_TIMEOUT", "60"))
+    vllm_ready_timeout: int = int(os.getenv("VLLM_READY_TIMEOUT", "120"))
     vllm_probe_interval: float = float(os.getenv("VLLM_PROBE_INTERVAL", "2"))
+
+    log_dir: str = os.getenv("LOG_DIR", "logs")
+    log_level: str = os.getenv("LOG_LEVEL", "INFO")
 
 
 @lru_cache(maxsize=1)

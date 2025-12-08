@@ -1,1 +1,16 @@
 .venv
+logs
+*.log
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+*.pyzwz
+*.pyzwzw
+*.pyzwzwz
+*.pyzwzwzw
+*.pyzwzwzwz
+services/__pycache__/
