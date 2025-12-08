@@ -1,0 +1,30 @@
+/mnt/sdb/workspaces/project/Hunyuan-MT/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO 12-08 11:16:56 [__init__.py:235] Automatically detected platform cuda.
+INFO 12-08 11:16:58 [api_server.py:1755] vLLM API server version 0.10.0
+INFO 12-08 11:16:58 [cli_args.py:261] non-default args: {'host': '0.0.0.0', 'port': 8021, 'model': '/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', 'trust_remote_code': True, 'dtype': 'bfloat16', 'max_seq_len_to_capture': 1550, 'served_model_name': ['Hunyuan-MT-Chimera-7B'], 'gpu_memory_utilization': 0.92, 'show_hidden_metrics_for_version': 'latest', 'max_num_batched_tokens': 32768, 'max_num_seqs': 512}
+INFO 12-08 11:16:58 [config.py:243] Replacing legacy 'type' key with 'rope_type'
+`torch_dtype` is deprecated! Use `dtype` instead!
+INFO 12-08 11:17:04 [config.py:1604] Using max model len 32768
+INFO 12-08 11:17:04 [config.py:2434] Chunked prefill is enabled with max_num_batched_tokens=32768.
+/mnt/sdb/workspaces/project/Hunyuan-MT/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO 12-08 11:17:09 [__init__.py:235] Automatically detected platform cuda.
+INFO 12-08 11:17:10 [core.py:572] Waiting for init message from front-end.
+INFO 12-08 11:17:10 [core.py:71] Initializing a V1 LLM engine (v0.10.0) with config: model='/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', speculative_config=None, tokenizer='/mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version='latest', otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=Hunyuan-MT-Chimera-7B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"max_capture_size":512,"local_cache_dir":null}
+INFO 12-08 11:17:12 [parallel_state.py:1102] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+INFO 12-08 11:17:12 [topk_topp_sampler.py:49] Using FlashInfer for top-p & top-k sampling.
+INFO 12-08 11:17:12 [gpu_model_runner.py:1843] Starting to load model /mnt/sdb/workspaces/project/hgmodel/Hunyuan-MT-Chimera-7B...
+INFO 12-08 11:17:13 [gpu_model_runner.py:1875] Loading model from scratch...
+INFO 12-08 11:17:13 [cuda.py:290] Using Flash Attention backend on V1 engine.
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.15it/s]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:00,  2.28it/s]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.83it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.39it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.50it/s]
+
+INFO 12-08 11:17:16 [default_loader.py:262] Loading weights took 2.79 seconds
+INFO 12-08 11:17:16 [gpu_model_runner.py:1892] Model loading took 13.9870 GiB and 3.104666 seconds
+INFO 12-08 11:17:25 [backends.py:530] Using cache directory: /home/sfkj/.cache/vllm/torch_compile_cache/f1022ba8f8/rank_0_0/backbone for vLLM's torch.compile
+INFO 12-08 11:17:25 [backends.py:541] Dynamo bytecode transform time: 8.82 s
