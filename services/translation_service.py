@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 from .config import get_settings
 from .logger import get_logger, setup_logging
-from .translator import translate_text
+from .translator import translate_text_async
 from .vllm_launcher import ensure_vllm_running
 
 setup_logging()
@@ -32,7 +32,7 @@ def health() -> Dict[str, str]:
 async def translate(payload: TranslateRequest) -> TranslateResponse:
     """翻译接口：仅接收待翻译文本，返回译文。"""
     logger.info("收到翻译请求，文本长度=%s", len(payload.text or ""))
-    translated_text = translate_text(payload.text)
+    translated_text = await translate_text_async(payload.text)
     return TranslateResponse(text=translated_text)
 
 
